@@ -15,7 +15,7 @@ RUN python2.7 get-pip.py
 # Do following install tasks in /opt
 WORKDIR /opt
 
-RUN git https://github.com/CoreSecurity/impacket.git
+RUN git clone https://github.com/CoreSecurity/impacket.git
 
 WORKDIR /opt/impacket
 RUN python setup install
