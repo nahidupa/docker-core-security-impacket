@@ -18,6 +18,6 @@ WORKDIR /opt
 RUN git clone https://github.com/CoreSecurity/impacket.git
 
 WORKDIR /opt/impacket
-RUN python setup install
+RUN python setup.py install
 
 RUN cp /opt/impacket/examples /opt/impacket/impacket/
